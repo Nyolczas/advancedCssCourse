@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 @font-face {
     font-family: Prime;
     src: url(../fonts/Prime\ Light.otf);
@@ -15,37 +19,45 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    /* padding: 3rem; */
 }
 
 .header {
-    height: 95vh;
+    height: 99vh;
     background-image: linear-gradient(to right bottom,
         rgba(34, 171, 221, 0.99),
         rgba(0, 86, 185, 0.8),
         rgba(50, 50, 165, 0.8),
         rgba(255, 44, 139, 0.8),
-        rgba(255, 68, 152, 0.99)),
+        hsla(333, 100%, 63%, 0.99)),
         url(../img/AS_Freelusion_Budapest_20140203_0565.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
+    padding: 0;
 
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+#canvas {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    /* background-color: red;  */
 }
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 
 }
 
 .logo {
-    height: 45px;
+    height: 4.5rem;
 }
 
 .text-box {
@@ -67,9 +79,9 @@ body {
 
 .heading-primary-main {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 16px;
+    letter-spacing: 1.6rem;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -79,9 +91,9 @@ body {
 }
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 12px;
+    letter-spacing: 1.2rem;
 
     animation-name: moveInRight;
     animation-duration: 1.8s;
@@ -91,11 +103,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     68% {
-        transform: translateX(15px);
+        transform: translateX(1.5rem);
     }
 
     100% {
@@ -107,20 +119,98 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
-    40% {
+    20% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
-    75% {
-        transform: translateX(-15px);
+    60% {
+        transform: translateX(-1.5rem);
     }
 
     100% {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 20rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3rem rgba(20, 0, 51, 0.4);
+}
+
+.btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.8rem 1rem rgba(20, 0, 51, 0.4);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 6rem;
+
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    40% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+
+    72% {
+        transform: translateY(-1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgba(255, 255, 255, 0.33);
+}
+
+.btn:hover::after {
+    transform: scale(1.2, 1.6);
+    opacity: 0;
 }
