@@ -1,13 +1,15 @@
 /* css reset */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 @font-face {
@@ -22,6 +24,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
+    box-sizing: border-box;
     /* padding: 3rem; */
 }
 
@@ -57,7 +60,7 @@ body {
 }
 
 .logo {
-    height: 4.5rem;
+    height: 5rem;
 }
 
 .text-box {

@@ -21,7 +21,7 @@ for (var i = 0; i < quant; i++) {
     radius = Math.random() * maxRadius + minRadius;
     var randomHue=Math.random() *50;
     var randomLight= 100 - (Math.random() * 20 + 2);
-    var clr = `hsla(${randomHue.toFixed(0)}, 100%, ${randomLight.toFixed(0)}%,${(radius * 0.05)+0.1})`;
+    var clr = `hsla(${randomHue.toFixed(0)}, 100%, ${randomLight.toFixed(0)}%,${(radius * 0.05)+0.05})`;
 
     CircleArray.push(new Circle(x, y, xSpeed, ySpeed, radius, clr));
 }
