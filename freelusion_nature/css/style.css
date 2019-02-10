@@ -1,5 +1,8 @@
-/* css reset */
+:root {
+    --text-color: rgb(112, 91, 136);
+}
 
+/* css reset */
 *,
 *::after,
 *::before {
@@ -16,14 +19,14 @@ html {
     font-family: Prime;
     src: url(../fonts/Prime\ Light.otf);
     src: url(../fonts/Prime\ Regular.otf);
-  }
+}
 
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
+    color: var(--text-color);
     box-sizing: border-box;
     /* padding: 3rem; */
 }
@@ -92,6 +95,7 @@ body {
 
     /* animation-delay: 1s; */
 }
+
 .heading-primary-sub {
     display: block;
     font-size: 2rem;
@@ -162,16 +166,12 @@ body {
     box-shadow: 0 0.8rem 1rem rgba(20, 0, 51, 0.4);
 }
 
-.btn-white{
+.btn-white {
     background-color: #fff;
-    color: #777;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 2rem;
     margin-top: 6rem;
-
-    animation-name: moveInBottom;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
 }
 
 
@@ -206,14 +206,23 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s;
+    transition: all .5s;
+    animation-fill-mode: backwards;
 }
 
 .btn-white::after {
-    background-color: rgba(255, 255, 255, 0.33);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .btn:hover::after {
     transform: scale(1.2, 1.6);
     opacity: 0;
 }
+
+.btn-animated {
+    animation-name: moveInBottom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
