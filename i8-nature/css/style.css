@@ -1,217 +1,160 @@
-:root {
-    --text-color: rgb(65, 97, 81);
-}
-
 /* css reset */
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
 html {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: var(--text-color);
-    box-sizing: border-box;
-    /* padding: 3rem; */
-}
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #425f5b;
+  box-sizing: border-box;
+  /* padding: 3rem; */ }
 
 .header {
-    height: 99vh;
-    background-image: linear-gradient(to right bottom,
-        rgba(34, 171, 221, 0.5),
-        rgba(0, 86, 185, 0.5)),
-        url(../img/LeapingFish.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    padding: 0;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
+  height: 99vh;
+  background-image: linear-gradient(to right bottom, rgba(29, 185, 8, 0.3), rgba(7, 116, 97, 0.3)), url(../img/LeapingFish.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
 
 #canvas {
-    position: absolute;
-    width: 100vw;
-    height: 99vh;
-    /* background-color: red;  */
-}
+  position: absolute;
+  width: 100vw;
+  height: 99vh;
+  /* background-color: red;  */ }
 
 .logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-
-}
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
 
 .logo {
-    height: 5rem;
-}
+  height: 5rem; }
 
 .text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    text-align: center;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center; }
 
 .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-}
-
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
 
 .heading-primary-main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 1.6rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-
-    /* animation-delay: 1s; */
-}
+  display: block;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1.6rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  /* animation-delay: 1s; */ }
 
 .heading-primary-sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.2rem;
-
-    animation-name: moveInRight;
-    animation-duration: 1.8s;
-    animation-timing-function: ease;
-}
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  animation-name: moveInRight;
+  animation-duration: 1.8s;
+  animation-timing-function: ease; }
 
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    68% {
-        transform: translateX(1.5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  68% {
+    transform: translateX(1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    20% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    60% {
-        transform: translateX(-1.5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  20% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  60% {
+    transform: translateX(-1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 .btn:link,
 .btn:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 20rem;
-    transition: all .2s;
-    position: relative;
-}
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 20rem;
+  transition: all .2s;
+  position: relative; }
 
 .btn:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 3rem rgba(0, 51, 26, 0.4);
-}
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 3rem rgba(0, 51, 26, 0.4); }
 
 .btn:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.8rem 1rem rgba(20, 0, 51, 0.4);
-}
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.8rem 1rem rgba(20, 0, 51, 0.4); }
 
 .btn-white {
-    background-color: #fff;
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 2rem;
-    margin-top: 6rem;
-}
-
+  background-color: #fff;
+  color: #425f5b;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 6rem; }
 
 @keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    40% {
-        opacity: 0;
-        transform: translateY(15rem);
-    }
-
-    72% {
-        transform: translateY(-1.5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  40% {
+    opacity: 0;
+    transform: translateY(15rem); }
+  72% {
+    transform: translateY(-1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .btn::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 20rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .5s;
-    animation-fill-mode: backwards;
-}
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .5s;
+  animation-fill-mode: backwards; }
 
 .btn-white::after {
-    background-color: rgba(255, 255, 255, 0.2);
-}
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .btn:hover::after {
-    transform: scale(1.2, 1.6);
-    opacity: 0;
-}
+  transform: scale(1.2, 1.6);
+  opacity: 0; }
 
 .btn-animated {
-    animation-name: moveInBottom;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-}
-
+  animation-name: moveInBottom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
