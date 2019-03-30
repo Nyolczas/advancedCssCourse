@@ -1,6 +1,11 @@
 #canvas {
     position: absolute;
     width: 100vw;
-    height: 99vh;
-    /* background-color: red;  */
+    height: 100vh;
+}
+
+.section-about {
+    background-color: $color-gray-light-1;
+    padding: 30rem 0;
+    margin-top: -25vh;
 }

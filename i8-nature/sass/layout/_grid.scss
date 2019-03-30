@@ -13,7 +13,7 @@
     
         // ^= ezzel kezdődik, *= tartalmazza, $= ezzel végződik
         [class^="col-"] {
-            background-color: $color-prymary-dark;
+            background-color: $color-primary-dark;
             color: $color-white;
             float: left;
             padding: 0.5rem;

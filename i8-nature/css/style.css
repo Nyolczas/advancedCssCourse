@@ -75,6 +75,21 @@ body {
     animation-duration: 1.8s;
     animation-timing-function: ease; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #007687, #005141);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    transform: skewy(5deg) skewX(15deg) scale(1.1) translateX(2rem);
+    letter-spacing: -2px;
+    text-shadow: 2.5rem -1.5rem 1rem rgba(0, 81, 65, 0.3); }
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -125,12 +140,12 @@ body {
 
 .header {
   height: 99vh;
-  background-image: linear-gradient(to right bottom, rgba(29, 185, 8, 0.3), rgba(7, 116, 97, 0.3)), url(../img/LeapingFish.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 118, 135, 0.3), rgba(0, 81, 65, 0.3)), url(../img/LeapingFish.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   padding: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 98vh); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -156,7 +171,7 @@ body {
       display: table;
       clear: both; }
     .grid-test .row [class^="col-"] {
-      background-color: #077461;
+      background-color: #005141;
       color: white;
       float: left;
       padding: 0.5rem;
@@ -179,5 +194,9 @@ body {
 #canvas {
   position: absolute;
   width: 100vw;
-  height: 99vh;
-  /* background-color: red;  */ }
+  height: 100vh; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 30rem 0;
+  margin-top: -25vh; }

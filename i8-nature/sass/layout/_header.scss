@@ -2,13 +2,13 @@
     height: 99vh;
     background-image: linear-gradient(to right bottom,
         rgba($color-primary-light, 0.3),
-        rgba($color-prymary-dark, 0.3)),
+        rgba($color-primary-dark, 0.3)),
         url(../img/LeapingFish.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     padding: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 98vh);
 
     &__logo-box {
         position: absolute;
