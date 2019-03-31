@@ -8,7 +8,7 @@
     background-position: top;
     position: relative;
     padding: 0;
-    clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 98vh);
+    clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 100%);
 
     &__logo-box {
         position: absolute;

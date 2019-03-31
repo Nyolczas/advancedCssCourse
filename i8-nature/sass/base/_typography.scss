@@ -40,18 +40,18 @@
     &:hover {
         transform: skewy(5deg) skewX(15deg) scale(1.1) translateX(2rem);
         letter-spacing: -2px;
-        text-shadow: 2.5rem -1.5rem 1rem rgba($color-primary-dark, 0.3);
+        text-shadow: 2.5rem -1.5rem 1rem rgba($color-shadow, 0.3);
     }
 }
 
 .heading-tertiary{
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .paragraph{
-    font-size: 1.6rem;
+    font-size: $default-font-size;
 
     &:not(:last-child) {
         margin-bottom: 3rem;

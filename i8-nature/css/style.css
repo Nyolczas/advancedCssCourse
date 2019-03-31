@@ -87,7 +87,7 @@ body {
   .heading-secondary:hover {
     transform: skewy(5deg) skewX(15deg) scale(1.1) translateX(2rem);
     letter-spacing: -2px;
-    text-shadow: 2.5rem -1.5rem 1rem rgba(0, 81, 65, 0.3); }
+    text-shadow: 2.5rem -1.5rem 1rem rgba(0, 51, 26, 0.3); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -160,15 +160,52 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
   color: #00be8f;
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 1px solid #00be8f;
+  padding: 5px;
+  transition: all 0.2s; }
 
 .btn-text:hover {
-  color: white; }
+  background-color: #00be8f;
+  color: white;
+  box-shadow: 0 0.7rem 1.2rem rgba(0, 51, 26, 0.3);
+  transform: translateY(-2px) scale(1.1); }
 
 .btn-text:active {
-  color: white; }
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 51, 26, 0.4);
+  transform: translateY(1px) scale(0.95); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 52%;
+    box-shadow: 0 0.7rem 1.5rem rgba(0, 51, 26, 0.5);
+    border-radius: 2px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s;
+    border: 0 solid #00be8f; }
+    .composition__photo--p1 {
+      left: 0;
+      top: 16rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 10rem; }
+    .composition__photo--p3 {
+      left: 25%;
+      top: 0; }
+    .composition__photo:hover {
+      transform: translateY(-1rem) scale(1.2);
+      box-shadow: 0 1.8rem 2.8rem rgba(0, 51, 26, 0.3);
+      z-index: 20;
+      border: 2rem solid #00be8f; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 51, 26, 0.8); }
 
 .header {
   height: 99vh;
@@ -177,7 +214,7 @@ body {
   background-position: top;
   position: relative;
   padding: 0;
-  clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 98vh); }
+  clip-path: polygon(0 0, 100vw 0, 100vw 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
