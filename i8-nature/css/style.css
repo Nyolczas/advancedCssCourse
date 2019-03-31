@@ -164,6 +164,12 @@ body {
   display: inline-block;
   text-decoration: none; }
 
+.btn-text:hover {
+  color: white; }
+
+.btn-text:active {
+  color: white; }
+
 .header {
   height: 99vh;
   background-image: linear-gradient(to right bottom, rgba(0, 118, 135, 0.3), rgba(0, 81, 65, 0.3)), url(../img/LeapingFish.jpg);
