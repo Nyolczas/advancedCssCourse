@@ -79,7 +79,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #007687, #005141);
+  background-image: linear-gradient(to right, #00be8f, #005141);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -102,8 +102,14 @@ body {
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -152,6 +158,11 @@ body {
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  color: #00be8f;
+  display: inline-block;
+  text-decoration: none; }
 
 .header {
   height: 99vh;

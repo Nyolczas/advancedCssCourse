@@ -58,3 +58,20 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-text{
+    &:link,
+    &:visited{
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &:hover {
+
+    }
+
+    &:active {
+
+    }
+}
