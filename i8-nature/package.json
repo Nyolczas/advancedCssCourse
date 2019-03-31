@@ -4,7 +4,7 @@
   "description": "Landing page for my portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w" 
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "8-I",
   "license": "ISC",
@@ -13,5 +13,3 @@
   },
   "dependencies": {}
 }
-
-
