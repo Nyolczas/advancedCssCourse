@@ -207,6 +207,24 @@ body {
     transform: scale(0.95);
     box-shadow: 0 0.1rem 0.5rem rgba(0, 51, 26, 0.8); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.8rem 2.8rem rgba(0, 51, 26, 0.3);
+  transition: all .3s;
+  cursor: pointer; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.8rem;
+    background-image: linear-gradient(to right, #00be8f, #005141);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .header {
   height: 99vh;
   background-image: linear-gradient(to right bottom, rgba(0, 118, 135, 0.3), rgba(0, 81, 65, 0.3)), url(../img/LeapingFish.jpg);
@@ -267,3 +285,8 @@ body {
   background-color: #f7f7f7;
   padding: 30rem 0;
   margin-top: -25vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(0, 118, 135, 0.3), rgba(0, 81, 65, 0.3)), url(../img/d_5.jpg);
+  background-size: cover; }
