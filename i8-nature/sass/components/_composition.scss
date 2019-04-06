@@ -9,12 +9,12 @@
         cursor: pointer;
         z-index: 10;
         transition: all 0.2s;
-        border: 0 solid $color-primary;
+        border: 0 solid $color-white;
         // border-radius: 1rem;
 
         &--p1 {
             left: 0;
-            top: 16rem;
+            top: 15rem;
         }
         
         &--p2 {
@@ -31,7 +31,7 @@
             transform: translateY(-1rem) scale(1.2); 
             box-shadow: 0 1.8rem 2.8rem rgba($color-shadow, 0.3);
             z-index: 20;
-            border: 2rem solid $color-primary;
+            border: 0.3rem solid $color-white;
         }
     }
 
