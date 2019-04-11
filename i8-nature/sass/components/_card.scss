@@ -7,7 +7,7 @@ $persp : 180rem;
     cursor: pointer;
 
     &__side {
-        color: white;
+        // color: white;
         height: 50rem;
         transition: all 0.8s ease;
         position: absolute;
@@ -19,10 +19,10 @@ $persp : 180rem;
         box-shadow: 0 1.5rem 4rem rgba($color-shadow, 0.3);
 
         &--front {
-            background-color: green;
+            // background-color: green;
         }
         &--back {
-            transform: rotateY(-180deg);
+            transform: rotateY(180deg);
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
@@ -31,9 +31,26 @@ $persp : 180rem;
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,0.8), rgba($color-secondary-dark,0.8)), 
+            url(../img/d_6.jpg);
+        }
+        &--2 {
+            background-image: url(../img/d_6.jpg);
+        }
+        &--3 {
+            background-image: url(../img/d_6.jpg);
+        }
     }
 }   
