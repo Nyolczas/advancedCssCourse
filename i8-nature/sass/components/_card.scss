@@ -19,7 +19,7 @@ $persp : 180rem;
         box-shadow: 0 1.5rem 4rem rgba($color-shadow, 0.3);
 
         &--front {
-            // background-color: green;
+             background-color: white;
         }
         &--back {
             transform: rotateY(180deg);
